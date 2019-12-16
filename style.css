@@ -1,0 +1,43 @@
+/*setting image size
+of the carousel*/
+.carousel-inner > .carousel-item > img {
+  width: 100%;
+  height: 420px;
+}
+
+
+/*addin margin below carousel*/
+.carousel{
+  margin-bottom: 10%;
+}
+
+
+.row{
+  margin-bottom: 10%;
+}
+
+
+/*setting image size*/
+.image {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5%;
+}
+
+
+.text-center{
+  margin-bottom: 10%;
+  padding: 5%;
+  background: #e3f6f5;
+  }
+
+  .signup{
+    background: none;
+    margin-top: 50px;
+  }
+
+
+.form-container{
+  position: absolute;
+  top:40%;
+}
