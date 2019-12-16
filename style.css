@@ -1,43 +1,74 @@
+/*setting background color*/
+.main{
+    background-color: #eef5b2;
+}
+
+
 /*setting image size
 of the carousel*/
 .carousel-inner > .carousel-item > img {
-  width: 100%;
-  height: 420px;
+    width: 100%;
+    height: 420px;
 }
 
 
-/*addin margin below carousel*/
+/*addin margin below carousel
+in home page*/
 .carousel{
-  margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 
+/*addig margin below grid system
+of home page*/
 .row{
-  margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 
-/*setting image size*/
-.image {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 5%;
+/*setting image size in grid system
+of home page and sign up page
+and adding marin below the images
+ */
+.gridImage {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5%;
 }
 
 
+/*adding margin below text and
+padding of the grid of home page*/
 .text-center{
-  margin-bottom: 10%;
-  padding: 5%;
-  background: #e3f6f5;
-  }
+    margin-bottom: 10%;
+    padding: 5%;
 
-  .signup{
-    background: none;
-    margin-top: 50px;
   }
 
 
+
+/*setting image of the
+signup page*/
+.signup{
+    margin-top:100px;
+    padding: 0;
+  }
+
+
+
+/*adjustin position
+of the form of signup page*/
 .form-container{
-  position: absolute;
-  top:40%;
+    position: absolute;
+    top:30%;
+}
+
+
+
+/*adjusting header of
+signup page*/
+.signUpHeader{
+    text-align: center;
+    color: #003f5c;
+
 }
