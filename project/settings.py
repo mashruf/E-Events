@@ -130,8 +130,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT will be at our project based directory
+# and then it will have a directory called media
+#All media file will be stored there
+
+MEDIA_URL = '/media/'
+# where our uploaded file will be
+# located on the file system
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'events-home'
+LOGIN_REDIRECT_URL = 'events-home' # will take to homme if login successful
 
 LOGIN_URL = 'login'
