@@ -2,10 +2,16 @@
 # that we want correspond to each
 #view function
 
-
 from django.urls import path
 # this module is imported
 # to run the the destinated path
+
+from .views import (
+    PostListView,
+    PostDetailView,
+    PostCreateView
+)
+
 
 from . import views
 # this module is imported
@@ -14,11 +20,16 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home, name='events-home'),
+    path('', PostListView.as_view(), name='events-home'),
     # set the path empty to take us to homepage
-    # we are calling the funtion home
-    # from views.py by view.home
     # set the name of the path events-home
+
+    path('post/<int:pk>', PostDetailView.as_view(), name='post-detail'),
+    # will provide id of the route
+    # and post detail
+
+    path('post/new/', PostCreateView.as_view(), name='post-create'),
+    # will share a template with post update
 
     path('about/', views.about, name='events-about'),
     # set the path /about to take us to about page

@@ -5,6 +5,8 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 # imported for delet facilities
 
+from django.urls import reverse
+
 class Post(models.Model):
     # its a class that inherits from
     # the models class
@@ -21,3 +23,8 @@ class Post(models.Model):
     # how we want to print
     # our post
         return self.title
+
+    def get_absolute_url(self):
+    # will find url of any instance
+    # of post
+        return reverse('post-detail', kwargs={'pk': self.pk})
