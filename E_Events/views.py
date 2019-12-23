@@ -1,9 +1,10 @@
 from django.shortcuts import render
-
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import (
     ListView,
     DetailView,
-    CreateView
+    CreateView,
+    DeleteView
 )
 
 from .models import Post
@@ -39,7 +40,7 @@ class PostDetailView(DetailView):
     model = Post
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
 # will create new post
 
     model = Post
@@ -50,6 +51,18 @@ class PostCreateView(CreateView):
 
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+# delete a post
+
+    model = Post
+    success_url = '/'
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
 
 def about(request):
     # This function will return

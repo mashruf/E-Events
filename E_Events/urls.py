@@ -9,7 +9,8 @@ from django.urls import path
 from .views import (
     PostListView,
     PostDetailView,
-    PostCreateView
+    PostCreateView,
+    PostDeleteView
 )
 
 
@@ -30,6 +31,9 @@ urlpatterns = [
 
     path('post/new/', PostCreateView.as_view(), name='post-create'),
     # will share a template with post update
+
+    path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post-delete'),
+    
 
     path('about/', views.about, name='events-about'),
     # set the path /about to take us to about page
