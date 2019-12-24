@@ -13,10 +13,9 @@ from .models import Profile
 # in our funtion
 
 
-
 @receiver(post_save, sender=User)
 def create_profile(sender, instance, created, **kwargs):
-# creates user Profile
+    # creates user Profile
 
     if created:
         Profile.objects.create(user=instance)
@@ -24,6 +23,6 @@ def create_profile(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_profile(sender, instance, **kwargs):
-# save created Profile
+    # save created Profile
 
     instance.profile.save()

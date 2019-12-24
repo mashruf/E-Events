@@ -1,6 +1,6 @@
 # urls.py module will map the URLs
 # that we want correspond to each
-#view function
+# view function
 
 from django.urls import path
 # this module is imported
