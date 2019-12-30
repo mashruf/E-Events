@@ -11,15 +11,20 @@ from .models import Profile
 
 
 class UserRegisterForm(UserCreationForm):
-    # will inherit the UserCreationForm
+    """
+	
+	will inherit the UserCreationForm
+	
+	"""
 
     email = forms.EmailField()  # additional email field on the form
 
     class Meta:
-        # within meta we specified
-        # the model that we want
-        # this form to interact with
-
+        """
+		
+		within meta we specified the model that we want this form to interact with
+		
+		"""
         model = User
 
         fields = ['username', 'email', 'password1', 'password2']
@@ -28,8 +33,11 @@ class UserRegisterForm(UserCreationForm):
 
 
 class UserUpdateForm(forms.ModelForm):
-    # will update the user model
-
+    """
+	
+	will update the user model
+	
+	"""
     email = forms.EmailField()
 
     class Meta:
@@ -38,8 +46,11 @@ class UserUpdateForm(forms.ModelForm):
 
 
 class ProfileUpdateForm(forms.ModelForm):
-    # will allow to update image
-
+    """
+	
+	will allow to update image
+	
+	"""
     class Meta:
         model = Profile
         fields = ['image']

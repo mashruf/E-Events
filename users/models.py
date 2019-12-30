@@ -6,15 +6,19 @@ from django.contrib.auth.models import User
 
 from PIL import Image
 
+
 class Profile(models.Model):
+    """
+    Inheriting from model
+    """
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     # creating one to one relation with existing user models
 
-    image = models.ImageField(default='default.jpg',upload_to='profile_pics')
-
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 
     def __str__(self):
-    # how we want to show the user and profile
+        """
+        how we want to show the user and profile
+        """
         return f'{self.user.username} Profile'
-
-    

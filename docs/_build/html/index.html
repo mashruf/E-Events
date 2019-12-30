@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to E_Events’s documentation! &#8212; E_Events 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-E_Events.views">
+<span id="welcome-to-e-events-s-documentation"></span><h1>Welcome to E_Events’s documentation!<a class="headerlink" href="#module-E_Events.views" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="E_Events.views.PostCreateView">
+<em class="property">class </em><code class="descclassname">E_Events.views.</code><code class="descname">PostCreateView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.PostCreateView" title="Permalink to this definition">¶</a></dt>
+<dd><p>will create new post</p>
+<dl class="method">
+<dt id="E_Events.views.PostCreateView.form_valid">
+<code class="descname">form_valid</code><span class="sig-paren">(</span><em>form</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.PostCreateView.form_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>will override the form valid method</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="E_Events.views.PostCreateView.model">
+<code class="descname">model</code><a class="headerlink" href="#E_Events.views.PostCreateView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#E_Events.models.Post" title="E_Events.models.Post"><code class="xref py py-class docutils literal"><span class="pre">E_Events.models.Post</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="E_Events.views.PostDeleteView">
+<em class="property">class </em><code class="descclassname">E_Events.views.</code><code class="descname">PostDeleteView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.PostDeleteView" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete a post</p>
+<dl class="attribute">
+<dt id="E_Events.views.PostDeleteView.model">
+<code class="descname">model</code><a class="headerlink" href="#E_Events.views.PostDeleteView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#E_Events.models.Post" title="E_Events.models.Post"><code class="xref py py-class docutils literal"><span class="pre">E_Events.models.Post</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="E_Events.views.PostDetailView">
+<em class="property">class </em><code class="descclassname">E_Events.views.</code><code class="descname">PostDetailView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.PostDetailView" title="Permalink to this definition">¶</a></dt>
+<dd><p>will provide details of post</p>
+<dl class="attribute">
+<dt id="E_Events.views.PostDetailView.model">
+<code class="descname">model</code><a class="headerlink" href="#E_Events.views.PostDetailView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#E_Events.models.Post" title="E_Events.models.Post"><code class="xref py py-class docutils literal"><span class="pre">E_Events.models.Post</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="E_Events.views.PostListView">
+<em class="property">class </em><code class="descclassname">E_Events.views.</code><code class="descname">PostListView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.PostListView" title="Permalink to this definition">¶</a></dt>
+<dd><p>will provide list view</p>
+<dl class="attribute">
+<dt id="E_Events.views.PostListView.model">
+<code class="descname">model</code><a class="headerlink" href="#E_Events.views.PostListView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#E_Events.models.Post" title="E_Events.models.Post"><code class="xref py py-class docutils literal"><span class="pre">E_Events.models.Post</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="E_Events.views.about">
+<code class="descclassname">E_Events.views.</code><code class="descname">about</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.about" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will return what user want to see in our about page</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="E_Events.views.home">
+<code class="descclassname">E_Events.views.</code><code class="descname">home</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.views.home" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will return what user want to see in our homepage</p>
+</dd></dl>
+
+<span class="target" id="module-E_Events.models"></span><dl class="class">
+<dt id="E_Events.models.Post">
+<em class="property">class </em><code class="descclassname">E_Events.models.</code><code class="descname">Post</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.models.Post" title="Permalink to this definition">¶</a></dt>
+<dd><p>its a class that inherits from the models class.Each class going to create own field on database.</p>
+<dl class="method">
+<dt id="E_Events.models.Post.get_absolute_url">
+<code class="descname">get_absolute_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.models.Post.get_absolute_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>will find url of any instance of post</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-E_Events.apps"></span><dl class="class">
+<dt id="E_Events.apps.E_EventsConfig">
+<em class="property">class </em><code class="descclassname">E_Events.apps.</code><code class="descname">E_EventsConfig</code><span class="sig-paren">(</span><em>app_name</em>, <em>app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#E_Events.apps.E_EventsConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>setting the app’s config</p>
+</dd></dl>
+
+<span class="target" id="module-E_Events.admin"></span><span class="target" id="module-E_Events.urls"></span><span class="target" id="module-E_Events.tests"></span><span class="target" id="module-users.apps"></span><span class="target" id="module-users.forms"></span><dl class="class">
+<dt id="users.forms.ProfileUpdateForm">
+<em class="property">class </em><code class="descclassname">users.forms.</code><code class="descname">ProfileUpdateForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>instance=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#users.forms.ProfileUpdateForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>will allow to update image</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="users.forms.UserRegisterForm">
+<em class="property">class </em><code class="descclassname">users.forms.</code><code class="descname">UserRegisterForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.forms.UserRegisterForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>will inherit the UserCreationForm</p>
+<dl class="class">
+<dt id="users.forms.UserRegisterForm.Meta">
+<em class="property">class </em><code class="descname">Meta</code><a class="headerlink" href="#users.forms.UserRegisterForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>within meta we specified the model that we want this form to interact with</p>
+<dl class="attribute">
+<dt id="users.forms.UserRegisterForm.Meta.model">
+<code class="descname">model</code><a class="headerlink" href="#users.forms.UserRegisterForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">django.contrib.auth.models.User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="users.forms.UserUpdateForm">
+<em class="property">class </em><code class="descclassname">users.forms.</code><code class="descname">UserUpdateForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id='id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em>, <em>instance=None</em>, <em>use_required_attribute=None</em>, <em>renderer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#users.forms.UserUpdateForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>will update the user model</p>
+</dd></dl>
+
+<span class="target" id="module-users.views"></span><dl class="function">
+<dt id="users.views.profile">
+<code class="descclassname">users.views.</code><code class="descname">profile</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>to view user’s profile</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.views.register">
+<code class="descclassname">users.views.</code><code class="descname">register</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#users.views.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will return what user want to see in our registration homepage</p>
+</dd></dl>
+
+<span class="target" id="module-users.models"></span><dl class="class">
+<dt id="users.models.Profile">
+<em class="property">class </em><code class="descclassname">users.models.</code><code class="descname">Profile</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.models.Profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inheriting from model</p>
+</dd></dl>
+
+<span class="target" id="module-users.signals"></span><dl class="function">
+<dt id="users.signals.create_profile">
+<code class="descclassname">users.signals.</code><code class="descname">create_profile</code><span class="sig-paren">(</span><em>sender</em>, <em>instance</em>, <em>created</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.signals.create_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>create user profile for db</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="users.signals.save_profile">
+<code class="descclassname">users.signals.</code><code class="descname">save_profile</code><span class="sig-paren">(</span><em>sender</em>, <em>instance</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#users.signals.save_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>save created profile to db</p>
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, E_Events Group.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
